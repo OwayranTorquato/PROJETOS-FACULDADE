@@ -54,4 +54,7 @@ public class Subject {
     public void setEnrolledStudents(List<Student> enrolledStudents) {
         this.enrolledStudents = enrolledStudents;
     }
+    public void assignGrade(Student student, double grade) {
+        student.getGrades().add(grade);
+    }
 }
