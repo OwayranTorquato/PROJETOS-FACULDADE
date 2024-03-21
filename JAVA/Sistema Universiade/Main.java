@@ -69,6 +69,9 @@ public class Main {
         System.out.println("--------------------------------------");
         System.out.println("Grade given to " + student.getName() + " in subject " + subject.getName() + ": " + grade);
         System.out.println("Grade given to " + student1.getName() + " in subject " + subject1.getName() + ": "+ grade1);
+
+        //Também para exibir infos do objeto da class Teacher, ainda está com erro, preciso consertar
+        System.out.println(teacher1);
     }
     
 }

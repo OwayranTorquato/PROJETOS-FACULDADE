@@ -27,13 +27,15 @@ class Teacher extends Person {
         this.taughtSubjects = taughtSubjects;
     }
 
+    //Poliformismo da class Object para retornar informações do objeto, no caso o objeto da class Teacher
+    //erro em taughtSubjeccts, não aparece as disciplinas adicionadas a lista na main, preciso consertar
     @Override
     public String toString() {
-        return "Teacher{" +
-                "name='" + getName() + '\'' +
-                ", age=" + getAge() +
-                ", department='" + department + '\'' +
-                ", taughtSubjects=" + taughtSubjects +
+        return "Teacher " +
+                "Name='" + getName() + '\'' +
+                ", Age=" + getAge() +
+                ", Department='" + department + '\'' +
+                ", TaughtSubjects=" + taughtSubjects +
                 '}';
     }
 }
