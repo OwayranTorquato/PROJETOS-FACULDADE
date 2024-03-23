@@ -1,30 +1,30 @@
 public class Repeated {
-    //Criando a função para realizar a soma dos dígitos
+    // Creating the function to perform the sum of the digits
     public int repeatedSum(int num){
-        //Retorno de que o número foi recebido
-        System.out.println("O número recebido foi: " + num);
+        // Indicating that the number was received
+        System.out.println("The received number was: " + num);
         
-        //o loop que irá extrair os digitos
+        // Loop to extract the digits
         while (num >= 10){
-            //lógica do processo
+            // Logic of the process
             int sum = 0;
-            int originalNum = num; //salvando o numero origina
+            int originalNum = num; // Saving the original number
             while (num > 0){
-                sum += num % 10; //add ultimo digito a soma
-                num /= 10; //removendo o ultimo digito
+                sum += num % 10; // Adding the last digit to the sum
+                num /= 10; // Removing the last digit
             }
-            System.out.println("Soma dos dígitos de " + originalNum + " = " + sum);
-            //Se a soma ainda tiver mais de um dígito, atualiza num com a soma dos dígitos
+            System.out.println("Sum of the digits of " + originalNum + " = " + sum);
+            // If the sum still has more than one digit, updates num with the sum of the digits
             if (sum >= 10) {
                 num = sum; 
             } else {
-                //Retorna se houver apenas um digito
-                System.out.println("A soma repetida dos dígitos de " + originalNum + " é: " + sum);
+                // Returns if there is only one digit
+                System.out.println("The repeated sum of the digits of " + originalNum + " is: " + sum);
                 return sum; 
             }
         }
-        // Retorna num se ele tiver apenas um dígito
-        System.out.println("A soma repetida dos dígitos de " + num + " é: " + num);
+        // Returns num if it has only one digit
+        System.out.println("The repeated sum of the digits of " + num + " is: " + num);
         return num; 
     }
 }

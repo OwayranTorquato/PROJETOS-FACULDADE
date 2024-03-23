@@ -1,19 +1,17 @@
 public class NumSum {
-    //Criar o método tendo como parâmetro um array de nums e um target a ser encontrado
+    // Create the method with an array of nums and a target to be found as parameters
     public void numSum(int[] nums, int target){
-        // utilizar o for para percorrer o array
-        for (int i = 0; i<nums.length - 1; i++){
-            // verificar se o numero está presente no array
-            for (int j = i +1; j < nums.length; j++){
-                if (nums[i] + nums [j] == target){
-                    System.out.println("Dois elementos dentro deste array que somam: " + target + ": " + nums[i] + " e " + nums[j]);
+        // Use a for loop to iterate through the array
+        for (int i = 0; i < nums.length - 1; i++){
+            // Check if the number is present in the array
+            for (int j = i + 1; j < nums.length; j++){
+                if (nums[i] + nums[j] == target){
+                    System.out.println("Two elements within this array that sum to " + target + ": " + nums[i] + " and " + nums[j]);
                     return;
                 }
             }
-
         }
-        // Se nao for encontrado, retorna a mensagem
-        System.out.println("Não foi possível encontrar elementos que somados resultam em " + target);
+        // If not found, return the message
+        System.out.println("Unable to find elements that sum up to " + target);
     }
-    }
-
+}

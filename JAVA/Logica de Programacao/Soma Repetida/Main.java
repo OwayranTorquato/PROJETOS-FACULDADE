@@ -3,9 +3,9 @@ public class Main {
         Repeated repeated = new Repeated();
         int num = 547856988;
 
-        int sumDigits = repeated.repeatedSum(num); // Chama o método
+        int sumDigits = repeated.repeatedSum(num); // Calls the method
         
-        //Exibe o resultado da soma repetida dos dígitos
-        System.out.println("A soma repetida dos dígitos de " + num + " é: " + sumDigits);
+        // Displays the result of the repeated sum of the digits
+        System.out.println("The repeated sum of the digits of " + num + " is: " + sumDigits);
     }
 }
