@@ -1,9 +1,10 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
         // Creating a collection
-        Collection collection = new CollectionImpl();
+        Collection<Book> collection = new CollectionImpl();
 
         // Adding some books (just for example)
         Book book1 = new BookImpl("Book 1", "Author 1", 2022, "Publisher A", "ISBN001");
@@ -38,7 +39,7 @@ public class Main {
         bookManager.lendBook(book2, user);
 
         // Creating a collection report
-        CollectionReport report = new CollectionReport(collection);
+        CollectionReport report = new CollectionReport(books);
 
         // Generating and printing borrowed books report
         System.out.println("\nBorrowed Books Report:");

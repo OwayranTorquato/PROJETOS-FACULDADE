@@ -1,10 +1,16 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class CollectionImpl implements Collection {
-    private List<Book> books = new ArrayList<>();
-    private List<User> users = new ArrayList<>();
+class CollectionImpl implements Collection<Book> {
+    private List<Book> books= new ArrayList<>();
+    private List<User> users= new ArrayList<>();
 
+    
+
+    public CollectionImpl(List<Book> books, List<User> users) {
+        this.books = new ArrayList<>(books);
+        this.users = new ArrayList<>(users);
+    }
     //method to add book
     public void addBook(Book book) {
         books.add(book);

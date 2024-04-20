@@ -33,7 +33,8 @@ public class CollectionReport {
 
     // Method to generate a report of users and the books they borrowed
     public void userBooksReport() {
-        // Assuming the Collection<Book> contains both books and users with borrowed books
+        // Assuming the Collection<Book> contains both books and users with borrowed
+        // books
         System.out.println("User Books Report:");
         for (Book item : collection) {
             if (item instanceof User) {

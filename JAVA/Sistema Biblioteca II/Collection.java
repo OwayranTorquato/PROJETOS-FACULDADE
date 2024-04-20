@@ -1,7 +1,8 @@
 import java.util.List;
-interface Collection {
-    void addBook(Book book);
-    Book searchBook(String title, String isbn);
-    List<Book> listBooks();
+
+interface Collection<T> {
+    void addBook(T book);
+    T searchBook(String title, String isbn);
+    List<T> listBooks();
     List<User> listUsers();
 }
