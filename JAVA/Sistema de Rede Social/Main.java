@@ -3,8 +3,8 @@ import java.util.Date;
 
 public class Main {
     public static void main(String[] args){
-        User user1 = new User("John Doe", "john@example.com", "password123", new Date(1990, 5, 15));
-        User user2 = new User("Jane Smith", "jane@example.com", "password456", new Date(1985, 8, 20));
+        User user1 = new User("Joao", "joao@example.com", "password123", new Date(1990, 5, 15));
+        User user2 = new User("Maria", "maria@example.com", "password456", new Date(1998,05,03));
 
         // Creating posts
         Post post1 = new Post("Hello World!", new Date());
